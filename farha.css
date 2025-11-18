@@ -50,8 +50,21 @@
     box-shadow: 0 4px 10p ;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+@media (max-width: 768px) {
+
+    a {
+        font-size: 14px;   /* optional small tweak */
+    }
+
+    .contacts img {
+        width: 45px;
+        height: 45px;      /* optional small tweak */
+    }
+
+}
 
     
+
 
 
 
