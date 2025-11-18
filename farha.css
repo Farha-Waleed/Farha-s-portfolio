@@ -53,7 +53,7 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
     a {
-        margin: 230px auto;  /* center links horizontally */
+        margin: 170px auto;  /* center links horizontally */
         width: 80%;         /* adjust width for small screens */
         font-size: 14px;
         padding: 20px 0;
@@ -72,6 +72,7 @@
 }
 
     
+
 
 
 
