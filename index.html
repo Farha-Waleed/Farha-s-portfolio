@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/farha.css">
+  <link rel="stylesheet" href="farha.css">
   <title>Farha Waleed</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
          alt="mail"
          onclick="openEmail()">
 
-    <!-- WhatsApp (EMPTY CHAT, FIXED NUMBER) -->
+    <!-- WhatsApp -->
     <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png"
          alt="wapp"
          onclick="window.location.href='https://wa.me/201060822289'">
@@ -37,7 +37,6 @@
     function openEmail() {
       window.location.href = "mailto:farhawaleed179@gmail.com";
 
-      // If it fails (no mail app), open Gmail after 500ms
       setTimeout(function () {
         window.location.href =
           "https://mail.google.com/mail/?view=cm&fs=1&to=farhawaleed179@gmail.com";
