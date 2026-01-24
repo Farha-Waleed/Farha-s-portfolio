@@ -3,18 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="farha.css">
+  <link rel="stylesheet" href="css/farha.css">
   <title>Farha Waleed</title>
-
-  <!-- Preload critical images -->
-  <link rel="preload" as="image" href="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488100/edit_crh9br.jpg">
-  <link rel="preload" as="image" href="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488137/10462347-removebg-preview_iqsufn.png">
-  <link rel="preload" as="image" href="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/mail_fk1xhw.png">
-  <link rel="preload" as="image" href="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png">
-
-
 </head>
 <body>
+
   <div class="categories">
     <a href="Reels.html"><b>Reels</b></a>
     <a href="Videos.html"><b>Videos</b></a>
@@ -22,22 +15,34 @@
   </div>
 
   <div class="contacts">
+
     <!-- Behance -->
-    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488137/10462347-removebg-preview_iqsufn.png" 
-         alt="behance" 
-         onclick="window.open('https://www.behance.net/FarhaWaleed', '_blank')">
+    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488137/10462347-removebg-preview_iqsufn.png"
+         alt="behance"
+         onclick="window.location.href='https://www.behance.net/FarhaWaleed'">
 
     <!-- Email -->
-    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/mail_fk1xhw.png" 
-         alt="mail" 
-         onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=farhawaleed179@gmail.com', '_blank')">
-         
+    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/mail_fk1xhw.png"
+         alt="mail"
+         onclick="openEmail()">
 
     <!-- WhatsApp -->
-    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png" 
-         alt="wapp" 
-         onclick="window.open('https://wa.me/01060822289', '_blank')">
+    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png"
+         alt="wapp"
+         onclick="window.location.href='https://wa.me/01060822289?text=Hello%20Farha%2C%20I%20would%20like%20to%20inquire%20about%20your%20work.%20Can%20you%20please%20help%20me%3F'">
+
   </div>
+
+  <script>
+    function openEmail() {
+      window.location.href = "mailto:farhawaleed179@gmail.com?subject=Hello%20Farha&body=Hi%20Farha%2C%0A%0AI%20would%20like%20to%20work%20with%20you.%0A%0AThanks%2C%0A[Your%20Name]";
+
+      // If it fails (no mail app), open Gmail after 500ms
+      setTimeout(function() {
+        window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=farhawaleed179@gmail.com&su=Hello%20Farha&body=Hi%20Farha%2C%0A%0AI%20would%20like%20to%20work%20with%20you.%0A%0AThanks%2C%0A[Your%20Name]";
+      }, 500);
+    }
+  </script>
+
 </body>
 </html>
-
