@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="farha.css">
+  <link rel="stylesheet" href="css/farha.css">
   <title>Farha Waleed</title>
 </head>
 <body>
@@ -17,22 +17,19 @@
   <div class="contacts">
 
     <!-- Behance -->
-    <a href="https://www.behance.net/FarhaWaleed" target="_blank">
-      <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488137/10462347-removebg-preview_iqsufn.png"
-           alt="Behance">
-    </a>
+    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488137/10462347-removebg-preview_iqsufn.png"
+         alt="behance"
+         onclick="window.location.href='https://www.behance.net/FarhaWaleed'">
 
     <!-- Email -->
     <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/mail_fk1xhw.png"
-         alt="Email"
-         style="cursor: pointer;"
+         alt="mail"
          onclick="openEmail()">
 
-    <!-- WhatsApp (EMPTY CHAT) -->
-    <a href="https://wa.me/201060822289" target="_blank">
-      <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png"
-           alt="WhatsApp">
-    </a>
+    <!-- WhatsApp (EMPTY CHAT, FIXED NUMBER) -->
+    <img src="https://res.cloudinary.com/du0ul4ojw/image/upload/v1763488138/wapp_kw9dsw.png"
+         alt="wapp"
+         onclick="window.location.href='https://wa.me/201060822289'">
 
   </div>
 
@@ -40,7 +37,7 @@
     function openEmail() {
       window.location.href = "mailto:farhawaleed179@gmail.com";
 
-      // Fallback to Gmail if no email client exists
+      // If it fails (no mail app), open Gmail after 500ms
       setTimeout(function () {
         window.location.href =
           "https://mail.google.com/mail/?view=cm&fs=1&to=farhawaleed179@gmail.com";
